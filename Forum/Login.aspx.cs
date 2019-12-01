@@ -30,7 +30,7 @@ namespace Forum
             String username = usernameTxt.Text;
             String password = passwordTxt.Text;
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString"].ConnectionString);
-            SqlCommand checkAuth = new SqlCommand("SELECT COUNT(*) FROM User WHERE (User_Username = @user) and (user_Password = @pass)", conn);
+            SqlCommand checkAuth = new SqlCommand("SELECT COUNT(*) FROM [User] WHERE (User_Username = @user) and (user_Password = @pass)", conn);
             checkAuth.Parameters.AddWithValue("@user", username);
             checkAuth.Parameters.AddWithValue("@pass", password);
 
