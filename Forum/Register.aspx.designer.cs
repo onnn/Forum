@@ -40,15 +40,6 @@ namespace Forum {
         protected global::System.Web.UI.WebControls.Label errorLbl;
         
         /// <summary>
-        /// fNameLbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label fNameLbl;
-        
-        /// <summary>
         /// fNameTxt control.
         /// </summary>
         /// <remarks>
@@ -92,15 +83,6 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator LastNameRequiredValidator;
-        
-        /// <summary>
-        /// emailLbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label emailLbl;
         
         /// <summary>
         /// emailTxt control.

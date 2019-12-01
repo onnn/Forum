@@ -49,15 +49,6 @@ namespace Forum {
         protected global::System.Web.UI.WebControls.Label errorLbl;
         
         /// <summary>
-        /// usernameLbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label usernameLbl;
-        
-        /// <summary>
         /// usernameTxt control.
         /// </summary>
         /// <remarks>
@@ -74,15 +65,6 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator usernameValidator;
-        
-        /// <summary>
-        /// passwordLbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label passwordLbl;
         
         /// <summary>
         /// passwordTxt control.
