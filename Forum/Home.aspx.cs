@@ -11,7 +11,10 @@ namespace Forum
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.Cookies["username"] == null)
+            {
+                Response.Redirect("/Login.aspx");
+            }
         }
 
         protected void loginBtn_Click(object sender, EventArgs e)

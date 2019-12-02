@@ -18,8 +18,35 @@
 
             <asp:Label ID="loginLbl" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Users"></asp:Label>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ForumApplicationConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1">
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="User_Id">
+                <Columns>
+                    <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
+                    <asp:BoundField DataField="User_Id" HeaderText="User_Id" InsertVisible="False" ReadOnly="True" SortExpression="User_Id" />
+                    <asp:BoundField DataField="User_Username" HeaderText="User_Username" SortExpression="User_Username" />
+                    <asp:BoundField DataField="User_Password" HeaderText="User_Password" SortExpression="User_Password" />
+                    <asp:BoundField DataField="User_Email" HeaderText="User_Email" SortExpression="User_Email" />
+                    <asp:BoundField DataField="User_FName" HeaderText="User_FName" SortExpression="User_FName" />
+                    <asp:BoundField DataField="User_LName" HeaderText="User_LName" SortExpression="User_LName" />
+                </Columns>
             </asp:GridView>
+            <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="User_Id" DataSourceID="SqlDataSource2" Height="50px" Width="125px">
+                <Fields>
+                    <asp:BoundField DataField="User_Id" HeaderText="User_Id" InsertVisible="False" ReadOnly="True" SortExpression="User_Id" />
+                    <asp:BoundField DataField="User_Username" HeaderText="User_Username" SortExpression="User_Username" />
+                    <asp:BoundField DataField="User_Password" HeaderText="User_Password" SortExpression="User_Password" />
+                    <asp:BoundField DataField="User_Email" HeaderText="User_Email" SortExpression="User_Email" />
+                    <asp:BoundField DataField="User_FName" HeaderText="User_FName" SortExpression="User_FName" />
+                    <asp:BoundField DataField="User_LName" HeaderText="User_LName" SortExpression="User_LName" />
+                </Fields>
+            </asp:DetailsView>
+            <asp:Label ID="deleteErrorLabel" runat="server" Visible="False"></asp:Label>
+            <br />
+            <asp:Button ID="deleteUser" runat="server" OnClick="deleteUser_Click" Text="Delete Selected User" />
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ForumApplicationConnectionString2 %>" SelectCommand="SELECT * FROM [User] WHERE ([User_Id] = @User_Id)">
+                <SelectParameters>
+                    <asp:ControlParameter ControlID="GridView1" Name="User_Id" PropertyName="SelectedValue" Type="Int32" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <br />
         </div>
     </form>

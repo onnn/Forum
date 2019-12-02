@@ -41,7 +41,8 @@ namespace Forum
 
             if (UserExist > 0)
             {
-                Response.Redirect("/AdminConsole.aspx");
+                Response.Cookies["username"].Value = username;
+                Response.Redirect("/Home.aspx");
                 conn.Close();
             }
             else

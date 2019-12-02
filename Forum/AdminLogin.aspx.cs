@@ -35,6 +35,7 @@ namespace Forum
 
             if (UserExist > 0)
             {
+                Response.Cookies["admin"].Value = "true";
                 Response.Redirect("/AdminConsole.aspx");
                 conn.Close();
             }
