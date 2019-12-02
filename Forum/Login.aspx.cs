@@ -27,6 +27,7 @@ namespace Forum
             errorLbl.Visible = false;
 
 
+
             String username = usernameTxt.Text;
             String password = passwordTxt.Text;
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString"].ConnectionString);

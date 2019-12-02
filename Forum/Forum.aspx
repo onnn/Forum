@@ -17,4 +17,11 @@
         <SortedDescendingCellStyle BackColor="#E5E5E5" />
         <SortedDescendingHeaderStyle BackColor="#275353" />
     </asp:GridView>
+    <br />
+    <asp:Label ID="Label1" runat="server" ForeColor="#009999" Text="Create New Thread"></asp:Label>
+    <br />
+    <asp:TextBox ID="subjectTxt" runat="server" Height="35px" Width="1128px">Thread Subject</asp:TextBox>
+    <br />
+    <asp:Button ID="subBtn" runat="server" OnClick="subBtn_Click" Text="Submit" />
+    <br />
 </asp:Content>
