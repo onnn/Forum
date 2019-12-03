@@ -41,7 +41,7 @@ namespace Forum
 
             if (UserExist > 0)
             {
-                Response.Cookies["username"].Value = username;
+                Session["username"] = username;
                 Response.Redirect("/Home.aspx");
                 conn.Close();
             }
