@@ -17,7 +17,7 @@
        <div class="form container text-white">
 
             <asp:Label ID="loginLbl" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Users"></asp:Label>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ForumApplicationConnectionString %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ForumApplicationConnectionString3 %>" SelectCommand="SELECT * FROM [User]"></asp:SqlDataSource>
             <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="User_Id">
                 <Columns>
                     <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
@@ -49,6 +49,6 @@
             </asp:SqlDataSource>
             <br />
         </div>
-    </form>
+        </form>
 </body>
 </html>

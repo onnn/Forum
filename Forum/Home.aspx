@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Forum.Home" %>
+<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Forum.Home" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
 
 <!DOCTYPE html>
 
@@ -14,7 +16,7 @@
 </head>
 <body>
         
-    <form id="form1" runat="server">
+    
         <ul class="nav justify-content-center">
   <li class="nav-item text-white">
       <button type="button" class="btn btn-dark">
@@ -38,6 +40,7 @@
   </li>
   
 </ul>
+
         <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">It doesn't look like you're logged in!</h4>
   <p>In order to use the site, you're going to need to login.</p>
@@ -48,7 +51,4 @@
       <asp:Button ID="registerBtn" runat="server" OnClick="registerBtn_Click" Text="Register" CssClass="btn btn-primary btn-lg active"/>
   </p>
 </div>
-         
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Forum {
-    
-    
-    public partial class AdminConsole {
-        
+namespace Forum
+{
+
+
+    public partial class AdminConsole
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// loginLbl control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label loginLbl;
-        
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
+
         /// <summary>
         /// GridView1 control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
+
         /// <summary>
         /// DetailsView1 control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DetailsView DetailsView1;
-        
+
         /// <summary>
         /// deleteErrorLabel control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label deleteErrorLabel;
-        
+
         /// <summary>
         /// deleteUser control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button deleteUser;
-        
+
         /// <summary>
         /// SqlDataSource2 control.
         /// </summary>
