@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Forum.Home" %>
+<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Forum.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-=======
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Forum.Home" %>
+
 
 <!DOCTYPE html>
 
@@ -18,7 +16,7 @@
 </head>
 <body>
         
-    <form id="form1" runat="server">
+    
         <ul class="nav justify-content-center">
   <li class="nav-item text-white">
       <button type="button" class="btn btn-dark">
@@ -42,7 +40,7 @@
   </li>
   
 </ul>
->>>>>>> 54994c36d39ef19fd2b8ba02732890289d048d93
+
         <div class="alert alert-success" role="alert">
   <h4 class="alert-heading">It doesn't look like you're logged in!</h4>
   <p>In order to use the site, you're going to need to login.</p>

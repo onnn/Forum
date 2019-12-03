@@ -13,7 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    
        <div class="form container text-white">
 
             <asp:Label ID="loginLbl" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Users"></asp:Label>
@@ -49,6 +49,6 @@
             </asp:SqlDataSource>
             <br />
         </div>
-    </form>
+
 </body>
 </html>

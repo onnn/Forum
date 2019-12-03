@@ -7,20 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Forum {
-    
-    
-    public partial class AdminLogin {
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+namespace Forum
+{
+
+
+    public partial class AdminLogin
+    {
+
         /// <summary>
         /// loginLbl control.
         /// </summary>
@@ -29,7 +22,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label loginLbl;
-        
+
         /// <summary>
         /// SqlDataSource1 control.
         /// </summary>
@@ -38,7 +31,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
+
         /// <summary>
         /// errorLbl control.
         /// </summary>
@@ -47,7 +40,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label errorLbl;
-        
+
         /// <summary>
         /// usernameTxt control.
         /// </summary>
@@ -56,7 +49,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox usernameTxt;
-        
+
         /// <summary>
         /// usernameValidator control.
         /// </summary>
@@ -65,7 +58,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator usernameValidator;
-        
+
         /// <summary>
         /// passwordTxt control.
         /// </summary>
@@ -74,7 +67,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox passwordTxt;
-        
+
         /// <summary>
         /// passwordValidator control.
         /// </summary>
@@ -83,7 +76,7 @@ namespace Forum {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordValidator;
-        
+
         /// <summary>
         /// loginBtn control.
         /// </summary>
