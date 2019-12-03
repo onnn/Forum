@@ -20,14 +20,29 @@ namespace Forum
         protected void subBtn_Click(object sender, EventArgs e)
         {
             String subject = subjectTxt.Text;
-            
+            String username = Session["username"].ToString();
 
             SqlConnection db = new SqlConnection(SqlDataSource1.ConnectionString);
             SqlCommand cmd = new SqlCommand();
+            SqlCommand cmdid = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [Thread] (Thread_Subject, User_Id) VALUES (@subject, 1)";
+            cmdid.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "INSERT INTO [Thread] (Thread_Subject, User_Id) VALUES (@subject, @userid)";
+            cmdid.CommandText = "Select User_Id from User where User_Username = '" + username + "';";
             cmd.Connection = db;
+
+            SqlDataReader rdr = cmdid.ExecuteReader();
+            while (rdr.Read())
+            {
+                string column = rdr["ColumnName"].ToString();
+                int columnValue = Convert.ToInt32(rdr["ColumnName"]);
+            }
+
             cmd.Parameters.Add("@subject", DbType.String).Value = subject;
+            cmd.Parameters.Add("@userid", DbType.Int16).Value = userid;
+
+
+
 
             cmd.Connection = db;
             db.Open();

@@ -7,19 +7,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-
 namespace Forum
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class AdminLogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void registerBtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("/Register.aspx");
         }
 
         protected void loginBtn_Click(object sender, EventArgs e)
@@ -27,11 +21,10 @@ namespace Forum
             errorLbl.Visible = false;
 
 
-
             String username = usernameTxt.Text;
             String password = passwordTxt.Text;
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString"].ConnectionString);
-            SqlCommand checkAuth = new SqlCommand("SELECT COUNT(*) FROM [User] WHERE (User_Username = @user) and (user_Password = @pass)", conn);
+            SqlCommand checkAuth = new SqlCommand("SELECT COUNT(*) FROM [Admin] WHERE (Admin_Username = @user) and (Admin_Password = @pass)", conn);
             checkAuth.Parameters.AddWithValue("@user", username);
             checkAuth.Parameters.AddWithValue("@pass", password);
 
@@ -42,8 +35,8 @@ namespace Forum
 
             if (UserExist > 0)
             {
-                Session["username"] = username;
-                Response.Redirect("/Home.aspx");
+                Session["admin"] = "true";
+                Response.Redirect("/AdminConsole.aspx");
                 conn.Close();
             }
             else
