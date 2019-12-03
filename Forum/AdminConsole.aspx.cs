@@ -32,7 +32,7 @@ namespace Forum
             }
             GridViewRow row = GridView1.Rows[GridView1.SelectedIndex];
             int userId = Convert.ToInt32(row.Cells[1].Text);
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString3"].ConnectionString))
             {
                 con.Open();
                 using (SqlCommand com = new SqlCommand("DELETE FROM [User] WHERE User_Id=@ID", con))

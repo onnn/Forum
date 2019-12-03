@@ -23,7 +23,7 @@ namespace Forum
 
             String username = usernameTxt.Text;
             String password = passwordTxt.Text;
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ForumApplicationConnectionString3"].ConnectionString);
             SqlCommand checkAuth = new SqlCommand("SELECT COUNT(*) FROM [Admin] WHERE (Admin_Username = @user) and (Admin_Password = @pass)", conn);
             checkAuth.Parameters.AddWithValue("@user", username);
             checkAuth.Parameters.AddWithValue("@pass", password);

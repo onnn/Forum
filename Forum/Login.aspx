@@ -44,6 +44,9 @@
            
             <asp:LinkButton ID="registerBtn" runat="server" OnClick="registerBtn_Click" CausesValidation="False">Not a member yet? Register here!</asp:LinkButton>
         
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AdminLogin.aspx">Admin Login</asp:HyperLink>
+        
      </div>
 
 </asp:Content>
